@@ -1,7 +1,12 @@
 *{
     box-sizing: border-box;
     margin: 0%;
-    background-color: rgb(211, 211, 211);
+    background-color: rgb(23, 23, 23);
+    text-decoration: whitesmoke;
+}
+
+.navbar{
+    padding: 0%;
 }
 
 
@@ -11,18 +16,7 @@ footer{
     background-color: rgb(98, 98, 98);
 }
 
-article{
-    background-color: rgb(196, 246, 196);
-    margin-top: 10%;
-}
 
-.card-body, .card, .card-title, .card-text{
-    margin-top: 10%;
-    background-color: rgb(117, 117, 117);
-}
 
-.btn{
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
+
 
