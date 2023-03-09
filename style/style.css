@@ -5,14 +5,18 @@
     height: auto;
 }
 
-    /* menu */
-
-
-
 .presentacion{
     text-decoration-color: aliceblue;
 }
 
+.card-img-top{
+    height: 10%
+}
+
+.custom-link {
+    color: white;
+    text-decoration: none;
+  }
 
 footer{
     padding-top: 10%;
