@@ -68,15 +68,15 @@
 
                     <div class="mb-3">
 
-                      <label for="exampleInputEmail1" class="form-label text-warning">Correo electrónico</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <label for="inputemail"class="form-label text-warning">Correo electrónico</label>
+                      <input type="email" class="form-control" id="emailtext" aria-describedby="emailHelp">
                       <div id="emailHelp" class="form-text">No olvides rellenar el campo de correo</div>
 
                     </div>
 
                     <div class="mb-3">
 
-                      <label for="exampleInputnumber1" class="form-label text-warning">Número de teléfono</label>
+                      <label for="inputnumber" class="form-label text-warning">Número de teléfono</label>
                       <input type="number" class="form-control" id="phonenumber">
 
                     </div>
@@ -84,7 +84,7 @@
                     <div class="mb-3">
 
                         <label for="my-textarea" class="text-warning">Motivo de contacto</label>
-                        <textarea id="my-textarea" class="form-control" name="" rows="3"></textarea>
+                        <textarea id="textarea" class="form-control" name="" rows="3"></textarea>
 
                     </div>
 
@@ -98,7 +98,7 @@
                     <button type="submit" onclick="accion()" id="botonsend" class="btn d-flex justify-item-center btn-warning mt-2">Enviar</button>
 
                 </form>
-                
+
             </div>
 
         </div>
@@ -141,7 +141,22 @@
     <script>
 
         function accion() {
-            alert("Se ha enviado correctamente su formulario");
+
+            const email = document.getElementById('emailtext').value;
+            const phoneNumber = document.getElementById('phonenumber').value;
+            const textarea = document.getElementById('textarea').value;
+            
+            if (email == "" || phoneNumber == "" || textarea == "") {
+
+                alert('Por favor, complete todos los campos obligatorios');
+
+
+            } else {
+                // Aquí podrías enviar el formulario
+                alert('El formulario ha sido enviado');
+
+            }
+
         }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
